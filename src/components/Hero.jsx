@@ -13,18 +13,7 @@ export default function Hero() {
   ];
 
   return (
-    <section
-      style={{
-        background: "#ffffff",
-        minHeight: "100vh",
-        width: "100%",
-        position: "relative",
-        overflow: "hidden",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <section className="bg-white min-h-screen w-full relative overflow-hidden flex flex-col items-center">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
       `}</style>
