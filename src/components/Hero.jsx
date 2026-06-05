@@ -70,22 +70,11 @@ export default function Hero() {
           height: 220,
           background:
             "radial-gradient(ellipse at center, rgba(255,170,185,0.42) 0%, transparent 70%)",
-          pointerEvents: "none",
-          zIndex: 0,
         }}
       />
 
       {/* ── HEADLINE ── */}
-      <div
-        style={{
-          textAlign: "center",
-          padding: "72px 40px 0",
-          maxWidth: 920,
-          position: "relative",
-          zIndex: 2,
-          width: "100%",
-        }}
-      >
+      <div className="max-w-5xl mx-auto px-4 py-12 flex flex-col items-center relative z-20 w-full text-center">
         <h1
           style={{
             fontFamily: "'DM Serif Display', serif",
