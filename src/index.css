@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+
+/* ── Base ── */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #fff;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: 'DM Serif Display', serif;
+}
+
+/* ── Fade-in animation ── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Nav link underline ── */
+.nav-link {
+  position: relative;
+  color: #555;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #1a1a1a;
+  transition: width 0.3s;
+}
+.nav-link:hover {
+  color: #1a1a1a;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ── Text highlights ── */
+.highlight-pink {
+  background: #f9c6d0;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+.highlight-green {
+  background: #c8e6c9;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+.underline-accent {
+  text-decoration: underline;
+  text-decoration-color: #e8524a;
+  text-underline-offset: 6px;
+}
+.underline-dark {
+  text-decoration: underline;
+  text-decoration-color: #1a1a1a;
+  text-underline-offset: 6px;
+}
+
+/* ── Circular image placeholders ── */
+.circle-img {
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.circle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circle-placeholder-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #aaa;
+  font-size: 11px;
+  font-family: 'DM Sans', sans-serif;
+  text-align: center;
+}
+
+/* ── Triangle decorations ── */
+.triangle-red {
+  width: 0;
+  height: 0;
+  border-left: 36px solid transparent;
+  border-right: 36px solid transparent;
+  border-bottom: 64px solid #e8524a;
+}
+.triangle-red-sm {
+  width: 0;
+  height: 0;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-bottom: 40px solid #e8524a;
+}
+
+/* ── Purple blob ── */
+.purple-blob {
+  width: 62px;
+  height: 82px;
+  background: #9c7fd4;
+  border-radius: 0 65% 65% 65%;
+  transform: rotate(18deg);
+}
+.purple-blob-sm {
+  width: 42px;
+  height: 58px;
+  background: #9c7fd4;
+  border-radius: 0 65% 65% 65%;
+  transform: rotate(18deg);
+}
+
+/* ── Pink blob ── */
+.pink-blob {
+  width: 52px;
+  height: 30px;
+  background: #f9c6d0;
+  border-radius: 50%;
+}
+
+/* ── Service row ── */
+.service-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 0;
+  border-bottom: 1px solid #e4e4e4;
+  gap: 24px;
+  transition: background 0.15s;
+}
+.service-row:hover {
+  background: #fafafa;
+}
+
+/* ── Arrow button ── */
+.arrow-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s, color 0.2s;
+  background: transparent;
+  color: #1a1a1a;
+}
+.arrow-btn:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* ── Quote mark ── */
+.quote-mark {
+  font-family: Georgia, serif;
+  font-size: 72px;
+  line-height: 0.7;
+  color: #ddd;
+  user-select: none;
+}
+
+/* ── Read more link ── */
+.read-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #1a1a1a;
+  cursor: pointer;
+  text-decoration: none;
+}
+.read-more-link::after {
+  content: '→';
+}
+.read-more-link:hover::after {
+  margin-left: 4px;
+}
+
+/* ── Subscribe button ── */
+.subscribe-btn {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s, transform 0.15s;
+}
+.subscribe-btn:hover {
+  background: #333;
+  transform: translateY(-1px);
+}
+
+/* ── Hamburger ── */
+.hamburger-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #1a1a1a;
+  margin: 4px 0;
+  transition: transform 0.2s;
+}
