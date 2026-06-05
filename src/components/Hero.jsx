@@ -2,14 +2,14 @@ export default function Hero() {
   // Each avatar: src, size (px), left (% within 1100px row), top (px from row top)
   // Positions tuned to match Figma stagger: alternating high/low across the row
   const avatars = [
-    { src: "src/images/person13.png", size: 108, left: "0%",   top: 148 }, // 1 – tiny, near left edge, lowest
-    { src: "src/images/person2.png",  size: 152, left: "7%",   top: 62  }, // 2 – large, mid-height
-    { src: "src/images/person14.png", size: 144, left: "21%",  top: 0   }, // 3 – medium, highest
-    { src: "src/images/person12.png", size: 132, left: "31%",  top: 100 }, // 4 – medium, lower
-    { src: "src/images/person2.png",  size: 138, left: "48%",  top: 12  }, // 5 – medium, raised
-    { src: "src/images/person1.png",  size: 130, left: "58%",  top: 100 }, // 6 – medium, lower
-    { src: "src/images/person6.png",  size: 148, left: "73%",  top: 0   }, // 7 – large, raised
-    { src: "src/images/person5.png",  size: 120, left: "87%",  top: 88  }, // 8 – medium, lower right
+    { src: "/images/person13.png", size: 108, left: "0%",   top: 148 }, // 1 – tiny, near left edge, lowest
+    { src: "/images/person2.png",  size: 152, left: "7%",   top: 62  }, // 2 – large, mid-height
+    { src: "/images/person14.png", size: 144, left: "21%",  top: 0   }, // 3 – medium, highest
+    { src: "/images/person12.png", size: 132, left: "31%",  top: 100 }, // 4 – medium, lower
+    { src: "/images/person2.png",  size: 138, left: "48%",  top: 12  }, // 5 – medium, raised
+    { src: "/images/person1.png",  size: 130, left: "58%",  top: 100 }, // 6 – medium, lower
+    { src: "/images/person6.png",  size: 148, left: "73%",  top: 0   }, // 7 – large, raised
+    { src: "/images/person5.png",  size: 120, left: "87%",  top: 88  }, // 8 – medium, lower right
   ];
 
   return (

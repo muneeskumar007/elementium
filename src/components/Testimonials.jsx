@@ -22,42 +22,42 @@ export default function Testimonials() {
 
       {/* TOP-LEFT — medium circle */}
       <div style={circleStyle(160, { top: 80, left: 100 })}>
-        <img src="src/images/person1.png" alt="Customer 1" style={imgStyle} />
+        <img src="/images/person1.png" alt="Customer 1" style={imgStyle} />
       </div>
 
       {/* MID-LEFT — small circle */}
       <div style={circleStyle(80, { top: 280, left: 40 })}>
-        <img src="src/images/person2.png" alt="Customer 2" style={imgStyle} />
+        <img src="/images/person2.png" alt="Customer 2" style={imgStyle} />
       </div>
 
       {/* BOTTOM-LEFT LARGE — biggest circle on left */}
       <div style={circleStyle(240, { top: 340, left: 120 })}>
-        <img src="src/images/person3.png" alt="Customer 3" style={imgStyle} />
+        <img src="/images/person3.png" alt="Customer 3" style={imgStyle} />
       </div>
 
       {/* BOTTOM-LEFT SMALL — small below mid-left */}
       <div style={circleStyle(78, { top: 530, left: 22 })}>
-        <img src="src/images/person5.png" alt="Customer 4" style={imgStyle} />
+        <img src="/images/person5.png" alt="Customer 4" style={imgStyle} />
       </div>
 
       {/* TOP-RIGHT SMALL — upper right area */}
       <div style={circleStyle(100, { top: 100, right: 280 })}>
-        <img src="src/images/person5.png" alt="Customer 5" style={imgStyle} />
+        <img src="/images/person5.png" alt="Customer 5" style={imgStyle} />
       </div>
 
       {/* TOP-RIGHT LARGE */}
       <div style={circleStyle(155, { top: 60, right: 80 })}>
-        <img src="src/images/person6.png" alt="Customer 6" style={imgStyle} />
+        <img src="/images/person6.png" alt="Customer 6" style={imgStyle} />
       </div>
 
       {/* MID-RIGHT — medium circle */}
       <div style={circleStyle(110, { top: 310, right: 230 })}>
-        <img src="src/images/person2.png " alt="Customer 7" style={imgStyle} />
+        <img src="/images/person2.png " alt="Customer 7" style={imgStyle} />
       </div>
 
       {/* BOTTOM-RIGHT LARGE — biggest circle on right */}
       <div style={circleStyle(190, { top: 430, right: 60 })}>
-        <img src="src/images/person1.png" alt="Customer 8" style={imgStyle} />
+        <img src="/images/person1.png" alt="Customer 8" style={imgStyle} />
       </div>
 
       {/* ════════════════════════════════════════

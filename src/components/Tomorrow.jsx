@@ -18,7 +18,7 @@ function SectionImg({ size = 300 }) {
       }}
     >
       {/* ← drop your <img> here */}
-      <img src="src/images/person11.png" style={{
+      <img src="/images/person11.png" style={{
         width: 500,
         height: 500,
         borderRadius: "50%",
@@ -47,7 +47,7 @@ function SectionImg2({ size = 900 }) {
       }}
     >
       {/* ← drop your <img> here */}
-      <img src="src/images/person12.png" style={{
+      <img src="/images/person12.png" style={{
         width: 500,
         height: 500,
         borderRadius: "50%",
