@@ -2,9 +2,7 @@ import { useState } from "react";
 
 const NAV_LINKS = ["Home", "Studio", "Services", "Contact", "FAQs"];
 
-import { useState } from "react";
-
-const NAV_LINKS = ["Home", "Studio", "Services", "Contact", "FAQs"];
+// duplicate imports removed
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
